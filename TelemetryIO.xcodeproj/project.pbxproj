@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E597DCE835CCAB69D05417 /* ModulationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F338AE0549F97FFE3736EA /* ModulationRouter.swift */; };
+		0EBE9C7C07EEF65AC96B5075 /* AudioSessionCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DF7861A3D769418786D69 /* AudioSessionCoordinatorTests.swift */; };
+		16554563E0F82F761B86ACAE /* IOTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF0CEB1AEF1900BC83E5CD /* IOTheme.swift */; };
+		2087E5FB3D51E23957020C40 /* NearbyProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D852C2B5B1B5567B897092 /* NearbyProbe.swift */; };
+		2D030B4037854AF43CB0EE2D /* TelemetryRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7339141CCD20F0685B40C5 /* TelemetryRuntimeTests.swift */; };
+		2E975F0726C6538C24FE1AFF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258956E703DF622AD9EAF2 /* RootView.swift */; };
+		35C65E3C902421C764EA5708 /* SignalPlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC78EAD8150310CBAB1E4D /* SignalPlots.swift */; };
+		3D638EAA598990D06A79164B /* InterfaceTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199C13F7AC2BCC2CB0D4530 /* InterfaceTraffic.swift */; };
+		4A13BF8CE3BD397F170673D6 /* InstrumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69363140741B03B96FD90F32 /* InstrumentModel.swift */; };
+		4E7F9B8705164C343B5457AB /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54144C617C4E99BB678F0B72 /* Signal.swift */; };
+		527B732E2A89193D3137DFE0 /* TelemetryIOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF78A2B6D0F85A40575D60 /* TelemetryIOApp.swift */; };
+		583D4081EBE0DF7E070F7BB9 /* PeerRangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D502B8768A21928E8F6740F7 /* PeerRangingView.swift */; };
+		5C160032A3F04A014C800C1B /* SignalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65203FFDA5BB31ABD0762503 /* SignalField.swift */; };
+		6835CAFD8A3F2182A1EEFB93 /* AudioRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB899EBA93BD384F2F7D418 /* AudioRuntimeTests.swift */; };
+		6E2AD97A87EDBC0D7BE65B55 /* OrbitalMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F65538D8B05554D8D364B9 /* OrbitalMotion.swift */; };
+		740532EC766E562B7C110980 /* IOFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A440F09E9DAAB80BE7B2B84 /* IOFeedback.swift */; };
+		7F4F8E211EF7878298D5E1C8 /* TelemetryCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720349CDE060536CB368645 /* TelemetryCapture.swift */; };
+		921C8AEBDBD02B9C13C0A634 /* NFCProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB11483AC2099D53AD630FA /* NFCProbe.swift */; };
+		A4A9CF6E8473030F0A4928FA /* SimulatorAccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5858AB02111BCBE49356B05 /* SimulatorAccessibilityTests.swift */; };
+		A71F5D0BFCC4F5073AEB9A08 /* SignalCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E139656094A5A3C1605BD73 /* SignalCatalog.swift */; };
+		A8110D29C604C4F1C2C1CE65 /* AudioActivationLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3708BE2BCDF6BDCB398A27C9 /* AudioActivationLifecycleTests.swift */; };
+		B2EF7EE8233A53AD3E293042 /* InstrumentDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05367DBD682DBF2F381B7A19 /* InstrumentDial.swift */; };
+		B48DE0935E092B294A1AFCF4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A2A75581A385D88F6D26728 /* PrivacyInfo.xcprivacy */; };
+		B72D07DC018D4248A90A9A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E74D8BD1596140522F53D3F /* Assets.xcassets */; };
+		B7370A8C1C9694E2DCA2FC96 /* TelemetryHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A7046B82BB9567BA95B8E /* TelemetryHub.swift */; };
+		C38B89E072F9D3E14E84651B /* TelemetryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7818A4461E130434733667 /* TelemetryUITests.swift */; };
+		C4C7DDB09D166A56B3DFE1D5 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8221A18E1DF80D5C5535CEF8 /* ChannelsView.swift */; };
+		C51B4A5B9B825EC2CC01312F /* TelemetryInputRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B7AD7FF6CB65F66AE44D41 /* TelemetryInputRuntimeTests.swift */; };
+		CEA0911A582FB57E0FEC4E40 /* PatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C22E3A89DC5BC60BFA37F /* PatchView.swift */; };
+		DBD5B8B4886E85995DCB5F7F /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07507BB38304CA099A6AA8 /* FieldView.swift */; };
+		E46EECA8D636E6D50F268F4E /* TrafficMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD216D7AB9142EC99822585 /* TrafficMath.swift */; };
+		F66D78E6A0DE1B8B61C27165 /* AudioSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700F34F15F12AC2FFDA22A3 /* AudioSessionCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5435E95303B90039072A1FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F81A0C30061818E554A5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF0A727DFAC1B429499C228;
+			remoteInfo = TelemetryIO;
+		};
+		5DEFD378FCB79555C6397F4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F81A0C30061818E554A5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF0A727DFAC1B429499C228;
+			remoteInfo = TelemetryIO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05367DBD682DBF2F381B7A19 /* InstrumentDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentDial.swift; sourceTree = "<group>"; };
+		0720349CDE060536CB368645 /* TelemetryCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryCapture.swift; sourceTree = "<group>"; };
+		1A2A75581A385D88F6D26728 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A440F09E9DAAB80BE7B2B84 /* IOFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOFeedback.swift; sourceTree = "<group>"; };
+		1F8C22E3A89DC5BC60BFA37F /* PatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchView.swift; sourceTree = "<group>"; };
+		2EAF0CEB1AEF1900BC83E5CD /* IOTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTheme.swift; sourceTree = "<group>"; };
+		3708BE2BCDF6BDCB398A27C9 /* AudioActivationLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioActivationLifecycleTests.swift; sourceTree = "<group>"; };
+		38D852C2B5B1B5567B897092 /* NearbyProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyProbe.swift; sourceTree = "<group>"; };
+		3CB11483AC2099D53AD630FA /* NFCProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCProbe.swift; sourceTree = "<group>"; };
+		54144C617C4E99BB678F0B72 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		54BF78A2B6D0F85A40575D60 /* TelemetryIOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryIOApp.swift; sourceTree = "<group>"; };
+		5A657CA48C5094EB52A08FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5D07507BB38304CA099A6AA8 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		5E139656094A5A3C1605BD73 /* SignalCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalCatalog.swift; sourceTree = "<group>"; };
+		5E74D8BD1596140522F53D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65203FFDA5BB31ABD0762503 /* SignalField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalField.swift; sourceTree = "<group>"; };
+		69363140741B03B96FD90F32 /* InstrumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentModel.swift; sourceTree = "<group>"; };
+		6FD216D7AB9142EC99822585 /* TrafficMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMath.swift; sourceTree = "<group>"; };
+		73258956E703DF622AD9EAF2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8221A18E1DF80D5C5535CEF8 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		84F9817C84188924D5D766B0 /* TelemetryIOTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TelemetryIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8629B7D0B0D70DA1C093B2B6 /* TelemetryIO.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TelemetryIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7818A4461E130434733667 /* TelemetryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryUITests.swift; sourceTree = "<group>"; };
+		9700F34F15F12AC2FFDA22A3 /* AudioSessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionCoordinator.swift; sourceTree = "<group>"; };
+		AD3DF7861A3D769418786D69 /* AudioSessionCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionCoordinatorTests.swift; sourceTree = "<group>"; };
+		AF7339141CCD20F0685B40C5 /* TelemetryRuntimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryRuntimeTests.swift; sourceTree = "<group>"; };
+		C483C95F708465083CE31853 /* TelemetryIOUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TelemetryIOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7A7046B82BB9567BA95B8E /* TelemetryHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryHub.swift; sourceTree = "<group>"; };
+		CEB899EBA93BD384F2F7D418 /* AudioRuntimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRuntimeTests.swift; sourceTree = "<group>"; };
+		D502B8768A21928E8F6740F7 /* PeerRangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerRangingView.swift; sourceTree = "<group>"; };
+		D5EC78EAD8150310CBAB1E4D /* SignalPlots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalPlots.swift; sourceTree = "<group>"; };
+		D8B7AD7FF6CB65F66AE44D41 /* TelemetryInputRuntimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryInputRuntimeTests.swift; sourceTree = "<group>"; };
+		E199C13F7AC2BCC2CB0D4530 /* InterfaceTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceTraffic.swift; sourceTree = "<group>"; };
+		E3F65538D8B05554D8D364B9 /* OrbitalMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitalMotion.swift; sourceTree = "<group>"; };
+		E5858AB02111BCBE49356B05 /* SimulatorAccessibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorAccessibilityTests.swift; sourceTree = "<group>"; };
+		EB6841CEBEEC44C94C6094DB /* NFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFC.entitlements; sourceTree = "<group>"; };
+		F5F338AE0549F97FFE3736EA /* ModulationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulationRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1558047FFCB278CE80E73528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8629B7D0B0D70DA1C093B2B6 /* TelemetryIO.app */,
+				84F9817C84188924D5D766B0 /* TelemetryIOTests.xctest */,
+				C483C95F708465083CE31853 /* TelemetryIOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D338838DA5F70F9CCEFE738 /* TelemetryIOTests */ = {
+			isa = PBXGroup;
+			children = (
+				3708BE2BCDF6BDCB398A27C9 /* AudioActivationLifecycleTests.swift */,
+				CEB899EBA93BD384F2F7D418 /* AudioRuntimeTests.swift */,
+				AD3DF7861A3D769418786D69 /* AudioSessionCoordinatorTests.swift */,
+				D8B7AD7FF6CB65F66AE44D41 /* TelemetryInputRuntimeTests.swift */,
+				AF7339141CCD20F0685B40C5 /* TelemetryRuntimeTests.swift */,
+			);
+			path = TelemetryIOTests;
+			sourceTree = "<group>";
+		};
+		2AF6B71B154FE5D084CC4E58 = {
+			isa = PBXGroup;
+			children = (
+				56A8386CE79B73B4DEF39FCE /* Core */,
+				E6ED082C9E874F103DF831AD /* TelemetryIO */,
+				1D338838DA5F70F9CCEFE738 /* TelemetryIOTests */,
+				CA7D54CB81FC3161C244DC6B /* TelemetryIOUITests */,
+				1558047FFCB278CE80E73528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55E3860B4E9BC0B34F96FE99 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8221A18E1DF80D5C5535CEF8 /* ChannelsView.swift */,
+				5D07507BB38304CA099A6AA8 /* FieldView.swift */,
+				05367DBD682DBF2F381B7A19 /* InstrumentDial.swift */,
+				2EAF0CEB1AEF1900BC83E5CD /* IOTheme.swift */,
+				1F8C22E3A89DC5BC60BFA37F /* PatchView.swift */,
+				D502B8768A21928E8F6740F7 /* PeerRangingView.swift */,
+				73258956E703DF622AD9EAF2 /* RootView.swift */,
+				65203FFDA5BB31ABD0762503 /* SignalField.swift */,
+				D5EC78EAD8150310CBAB1E4D /* SignalPlots.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		56A8386CE79B73B4DEF39FCE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5CE79EF33C276F59269ECA2B /* Sources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5CE79EF33C276F59269ECA2B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF2156C32C29352BF65F23A5 /* TelemetryCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B2E3FFEC296B4D53AD880F36 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69363140741B03B96FD90F32 /* InstrumentModel.swift */,
+				54BF78A2B6D0F85A40575D60 /* TelemetryIOApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C0CCFBD0CCB10BA48D2D2442 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9700F34F15F12AC2FFDA22A3 /* AudioSessionCoordinator.swift */,
+				E199C13F7AC2BCC2CB0D4530 /* InterfaceTraffic.swift */,
+				1A440F09E9DAAB80BE7B2B84 /* IOFeedback.swift */,
+				38D852C2B5B1B5567B897092 /* NearbyProbe.swift */,
+				3CB11483AC2099D53AD630FA /* NFCProbe.swift */,
+				0720349CDE060536CB368645 /* TelemetryCapture.swift */,
+				CD7A7046B82BB9567BA95B8E /* TelemetryHub.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA7D54CB81FC3161C244DC6B /* TelemetryIOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5858AB02111BCBE49356B05 /* SimulatorAccessibilityTests.swift */,
+				8D7818A4461E130434733667 /* TelemetryUITests.swift */,
+			);
+			path = TelemetryIOUITests;
+			sourceTree = "<group>";
+		};
+		E6ED082C9E874F103DF831AD /* TelemetryIO */ = {
+			isa = PBXGroup;
+			children = (
+				5E74D8BD1596140522F53D3F /* Assets.xcassets */,
+				5A657CA48C5094EB52A08FF4 /* Info.plist */,
+				EB6841CEBEEC44C94C6094DB /* NFC.entitlements */,
+				1A2A75581A385D88F6D26728 /* PrivacyInfo.xcprivacy */,
+				B2E3FFEC296B4D53AD880F36 /* App */,
+				C0CCFBD0CCB10BA48D2D2442 /* Services */,
+				55E3860B4E9BC0B34F96FE99 /* UI */,
+			);
+			path = TelemetryIO;
+			sourceTree = "<group>";
+		};
+		FF2156C32C29352BF65F23A5 /* TelemetryCore */ = {
+			isa = PBXGroup;
+			children = (
+				F5F338AE0549F97FFE3736EA /* ModulationRouter.swift */,
+				E3F65538D8B05554D8D364B9 /* OrbitalMotion.swift */,
+				54144C617C4E99BB678F0B72 /* Signal.swift */,
+				5E139656094A5A3C1605BD73 /* SignalCatalog.swift */,
+				6FD216D7AB9142EC99822585 /* TrafficMath.swift */,
+			);
+			path = TelemetryCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FF0A727DFAC1B429499C228 /* TelemetryIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB9FF7BC66A164087BEBF57 /* Build configuration list for PBXNativeTarget "TelemetryIO" */;
+			buildPhases = (
+				1C8B733EF7F59DA62FB8A236 /* Sources */,
+				BD950596964C55CA7E99764F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelemetryIO;
+			packageProductDependencies = (
+			);
+			productName = TelemetryIO;
+			productReference = 8629B7D0B0D70DA1C093B2B6 /* TelemetryIO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		615F8A3DBC402EFC3CB45A0E /* TelemetryIOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1C56CDA9E8A9E61CD60EB75 /* Build configuration list for PBXNativeTarget "TelemetryIOTests" */;
+			buildPhases = (
+				EFC47810C7EEACBAC1C856B2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C3431C6168E26B54B30C322 /* PBXTargetDependency */,
+			);
+			name = TelemetryIOTests;
+			packageProductDependencies = (
+			);
+			productName = TelemetryIOTests;
+			productReference = 84F9817C84188924D5D766B0 /* TelemetryIOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69F66BD3DE8E9D97D6048268 /* TelemetryIOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D0392ED9AB8D7FBBD112E3 /* Build configuration list for PBXNativeTarget "TelemetryIOUITests" */;
+			buildPhases = (
+				DF1736B9E24E2371D1DC1214 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				549500946D418BAA66A4A38B /* PBXTargetDependency */,
+			);
+			name = TelemetryIOUITests;
+			packageProductDependencies = (
+			);
+			productName = TelemetryIOUITests;
+			productReference = C483C95F708465083CE31853 /* TelemetryIOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20F81A0C30061818E554A5D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					0FF0A727DFAC1B429499C228 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					615F8A3DBC402EFC3CB45A0E = {
+
+						ProvisioningStyle = Automatic;
+					};
+					69F66BD3DE8E9D97D6048268 = {
+
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0FF0A727DFAC1B429499C228;
+					};
+				};
+			};
+			buildConfigurationList = C53D3194C1C875B0F46F7DBB /* Build configuration list for PBXProject "TelemetryIO" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2AF6B71B154FE5D084CC4E58;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1558047FFCB278CE80E73528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FF0A727DFAC1B429499C228 /* TelemetryIO */,
+				615F8A3DBC402EFC3CB45A0E /* TelemetryIOTests */,
+				69F66BD3DE8E9D97D6048268 /* TelemetryIOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD950596964C55CA7E99764F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72D07DC018D4248A90A9A9E /* Assets.xcassets in Resources */,
+				B48DE0935E092B294A1AFCF4 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C8B733EF7F59DA62FB8A236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D78E6A0DE1B8B61C27165 /* AudioSessionCoordinator.swift in Sources */,
+				C4C7DDB09D166A56B3DFE1D5 /* ChannelsView.swift in Sources */,
+				DBD5B8B4886E85995DCB5F7F /* FieldView.swift in Sources */,
+				740532EC766E562B7C110980 /* IOFeedback.swift in Sources */,
+				16554563E0F82F761B86ACAE /* IOTheme.swift in Sources */,
+				B2EF7EE8233A53AD3E293042 /* InstrumentDial.swift in Sources */,
+				4A13BF8CE3BD397F170673D6 /* InstrumentModel.swift in Sources */,
+				3D638EAA598990D06A79164B /* InterfaceTraffic.swift in Sources */,
+				06E597DCE835CCAB69D05417 /* ModulationRouter.swift in Sources */,
+				921C8AEBDBD02B9C13C0A634 /* NFCProbe.swift in Sources */,
+				2087E5FB3D51E23957020C40 /* NearbyProbe.swift in Sources */,
+				6E2AD97A87EDBC0D7BE65B55 /* OrbitalMotion.swift in Sources */,
+				CEA0911A582FB57E0FEC4E40 /* PatchView.swift in Sources */,
+				583D4081EBE0DF7E070F7BB9 /* PeerRangingView.swift in Sources */,
+				2E975F0726C6538C24FE1AFF /* RootView.swift in Sources */,
+				4E7F9B8705164C343B5457AB /* Signal.swift in Sources */,
+				A71F5D0BFCC4F5073AEB9A08 /* SignalCatalog.swift in Sources */,
+				5C160032A3F04A014C800C1B /* SignalField.swift in Sources */,
+				35C65E3C902421C764EA5708 /* SignalPlots.swift in Sources */,
+				7F4F8E211EF7878298D5E1C8 /* TelemetryCapture.swift in Sources */,
+				B7370A8C1C9694E2DCA2FC96 /* TelemetryHub.swift in Sources */,
+				527B732E2A89193D3137DFE0 /* TelemetryIOApp.swift in Sources */,
+				E46EECA8D636E6D50F268F4E /* TrafficMath.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1736B9E24E2371D1DC1214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A9CF6E8473030F0A4928FA /* SimulatorAccessibilityTests.swift in Sources */,
+				C38B89E072F9D3E14E84651B /* TelemetryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC47810C7EEACBAC1C856B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8110D29C604C4F1C2C1CE65 /* AudioActivationLifecycleTests.swift in Sources */,
+				6835CAFD8A3F2182A1EEFB93 /* AudioRuntimeTests.swift in Sources */,
+				0EBE9C7C07EEF65AC96B5075 /* AudioSessionCoordinatorTests.swift in Sources */,
+				C51B4A5B9B825EC2CC01312F /* TelemetryInputRuntimeTests.swift in Sources */,
+				2D030B4037854AF43CB0EE2D /* TelemetryRuntimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		549500946D418BAA66A4A38B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF0A727DFAC1B429499C228 /* TelemetryIO */;
+			targetProxy = 5435E95303B90039072A1FF3 /* PBXContainerItemProxy */;
+		};
+		7C3431C6168E26B54B30C322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF0A727DFAC1B429499C228 /* TelemetryIO */;
+			targetProxy = 5DEFD378FCB79555C6397F4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		502712B62B5C94BBC36B0D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = TelemetryIO;
+			};
+			name = Debug;
+		};
+		677CF3758B30403CC4371872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TELEMETRY_TEST_LOCATION = 0;
+			};
+			name = Release;
+		};
+		97A69BF13EF4DCCCF5E4EFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelemetryIO.app/TelemetryIO";
+			};
+			name = Release;
+		};
+		9876DD30A83CBA6187789D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TelemetryIO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B1CF3BCA8C19C4BD75DD53F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TelemetryIO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BA91BF7B9055759EFEF8113D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TELEMETRY_TEST_LOCATION = 0;
+			};
+			name = Debug;
+		};
+		D18873885671F866D1B94948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelemetryIO.app/TelemetryIO";
+			};
+			name = Debug;
+		};
+		FA5DCCC71803514274D393BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.telemetryio.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = TelemetryIO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D0392ED9AB8D7FBBD112E3 /* Build configuration list for PBXNativeTarget "TelemetryIOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502712B62B5C94BBC36B0D3D /* Debug */,
+				FA5DCCC71803514274D393BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C53D3194C1C875B0F46F7DBB /* Build configuration list for PBXProject "TelemetryIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA91BF7B9055759EFEF8113D /* Debug */,
+				677CF3758B30403CC4371872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1C56CDA9E8A9E61CD60EB75 /* Build configuration list for PBXNativeTarget "TelemetryIOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18873885671F866D1B94948 /* Debug */,
+				97A69BF13EF4DCCCF5E4EFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FCB9FF7BC66A164087BEBF57 /* Build configuration list for PBXNativeTarget "TelemetryIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9876DD30A83CBA6187789D64 /* Debug */,
+				B1CF3BCA8C19C4BD75DD53F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20F81A0C30061818E554A5D6 /* Project object */;
+}

@@ -1,0 +1,106 @@
+name: TelemetryIO
+options:
+  bundleIdPrefix: com.utkarsh
+  deploymentTarget:
+    iOS: "27.0"
+  xcodeVersion: "27.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    TELEMETRY_TEST_LOCATION: "0"
+targets:
+  TelemetryIO:
+    type: application
+    platform: iOS
+    sources:
+      - TelemetryIO
+      - Core/Sources/TelemetryCore
+    info:
+      path: TelemetryIO/Info.plist
+      properties:
+        CFBundleDisplayName: Telemetry I/O
+        NSMotionUsageDescription: "Telemetry I/O visualizes motion, magnetic field, air pressure and walking measurements when you enable their sources."
+        NSLocationWhenInUseUsageDescription: "Telemetry I/O visualizes your position, speed, heading and accuracy in the foreground. Position stays local unless you export a capture."
+        NSBluetoothAlwaysUsageDescription: "Telemetry I/O listens for nearby Bluetooth LE advertisements to visualize received signal strength. It does not connect to advertisers."
+        NSCameraUsageDescription: "Telemetry I/O measures brightness, color and camera exposure when enabled. Frames are processed locally and discarded."
+        NSMicrophoneUsageDescription: "Telemetry I/O measures audio level and spectrum when enabled. Audio is processed locally without recording."
+        NFCReaderUsageDescription: "Telemetry I/O reads an NDEF tag when you start a tag session. Tag contents are not stored."
+        NSNearbyInteractionUsageDescription: "Telemetry I/O can visualize distance to a participating nearby peer in a configured ranging session."
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIUserInterfaceStyle: Dark
+        CADisableMinimumFrameDurationOnPhone: true
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.utilities
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.telemetryio
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  TelemetryIOTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - TelemetryIOTests
+    dependencies:
+      - target: TelemetryIO
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.telemetryio.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/TelemetryIO.app/TelemetryIO"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  TelemetryIOUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - TelemetryIOUITests
+    dependencies:
+      - target: TelemetryIO
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.telemetryio.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        TEST_TARGET_NAME: TelemetryIO
+schemes:
+  TelemetryIO:
+    build:
+      targets:
+        TelemetryIO: all
+        TelemetryIOTests: [test]
+        TelemetryIOUITests: [test]
+    test:
+      macroExpansion: TelemetryIO
+      environmentVariables:
+        TELEMETRY_TEST_HOST: "1"
+        TELEMETRY_TEST_LOCATION: "$(TELEMETRY_TEST_LOCATION)"
+      targets:
+        - name: TelemetryIOTests
+          parallelizable: false
+          randomExecutionOrder: false
+        - name: TelemetryIOUITests
+          parallelizable: false
+          randomExecutionOrder: false
+  TelemetryIOUI:
+    build:
+      targets:
+        TelemetryIO: all
+        TelemetryIOUITests: [test]
+    test:
+      environmentVariables:
+        TELEMETRY_UI_TEST: "1"
+      targets:
+        - name: TelemetryIOUITests
+          parallelizable: false
+          randomExecutionOrder: false

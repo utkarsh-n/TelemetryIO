@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Telemetry I/O</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>Telemetry I/O reads an NDEF tag when you start a tag session. Tag contents are not stored.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Telemetry I/O listens for nearby Bluetooth LE advertisements to visualize received signal strength. It does not connect to advertisers.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Telemetry I/O measures brightness, color and camera exposure when enabled. Frames are processed locally and discarded.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Telemetry I/O visualizes your position, speed, heading and accuracy in the foreground. Position stays local unless you export a capture.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Telemetry I/O measures audio level and spectrum when enabled. Audio is processed locally without recording.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Telemetry I/O visualizes motion, magnetic field, air pressure and walking measurements when you enable their sources.</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>Telemetry I/O can visualize distance to a participating nearby peer in a configured ranging session.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+</dict>
+</plist>
